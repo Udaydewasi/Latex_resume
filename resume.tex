@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Uday Dewasi
+% Based off: https://github.com/Udaydewasi/Latex_resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% Uncomment one to use a specific font:
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{same}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure PDF is machine-readable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textit{#2} \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubSubheading}[2]{\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small#2} \\
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \small#2 \\
+  \end{tabular*}\vspace{-7pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+% Resume Starts Here
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \textbf{Udaram Dewasi}} \\ \vspace{1pt}  
+    \href{mailto:udaydewasi2601@gmail.com}{\underline{udaydewasi2601@gmail.com}} $|$
+    \href{tel:+917878842019}{\underline{+91-7878842019}} $|$
+    \href{https://leetcode.com/Udaydewasi_26}{\underline{leetcode/uday}} $|$
+    \href{https://www.linkedin.com/in/uday-dewasi-278aab268/}{\underline{linkedin/uday}} $|$ 
+    \href{https://github.com/Udaydewasi}{\underline{github/uday}} $|$
+    \href{https://uday-portfolio-two.vercel.app/}{\underline{Portfolio}}
+\end{center}
+
+%-----------Education----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+    {MBM University, Jodhpur, Rajasthan}{Sept. 2022 -- May 2026} 
+    {B.E. in Computer Science} {SCGPA: 7.61}
+\resumeSubheading
+    {Govt. Sr. Sec School, Sirohi, Rajasthan}{} 
+    {12th | PCM | 82.6\%} {2019 -- 2020}
+\resumeSubHeadingListEnd
+
+%-----------Technical Skills----------
+\section{Technical Skills}
+\textbf{Programming:} C/C++, DSA, OOP, JavaScript (ES6+), Java, SQL, HTML, CSS \\
+\textbf{Libraries/Frameworks:} React.js, Node.js, Express.js, PostgreSQL, MongoDB, Tailwind CSS, Redis, WebSocket, API Gateway \\
+\textbf{Tools/Platforms:} Git, GitHub, VS Code, Docker, AWS, CI/CD Pipelines \\
+\textbf{Operating Systems:} Linux, Windows
+
+%-----------Projects----------
+
+\section*{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+    {\textbf{LEARNIFY} $|$ \emph{MongoDB, Node.js, Express.js, React, Tailwind CSS}}{
+    \href{https://github.com/Udaydewasi/Learnify}
+    {\underline{GitHub Repo.}}}
+    \resumeItemListStart
+        \resumeItem{Developed a full-fledged MERN stack web application, serving as an EdTech platform, featuring authentication and
+role-based access for 3 types of users: students, educators, and administrators.}
+        \resumeItem{Utilized React.js for the front-end, Node.js with Express.js for the server-side logic, and MongoDB for efficient data
+management.}
+        \resumeItem{Features: Authentication, student, admin, and educator profiles, course purchasing, progress tracking, revenue
+monitoring, course uploads, and email notifications.}
+        \resumeItem{Implemented a secure payment gateway, enabling seamless course purchases and transaction processing.}
+    \resumeItemListEnd
+
+
+\resumeProjectHeading
+    {\textbf{WALLET SYSTEM} $|$ \emph{Node.js, React.js, PostgreSQL, MongoDB, Redis, WebSocket, Docker, AWS}} {\href{https://github.com/Udaydewasi/Wallet-System}{\underline{GitHub Repo.}}}
+    \resumeItemListStart
+        \resumeItem{Designed and deployed a scalable microservices-based wallet system for deposits, transfers, and real-time updates.}
+        \resumeItem{Utilized PostgreSQL for wallet management, MongoDB for user authentication, and Redis for caching to improve
+performance.}
+        \resumeItem{Implemented WebSocket for real-time transaction notifications and centralized routing/security with an API Gateway.}
+        \resumeItem{Developed a responsive, user-friendly frontend with React.js and integrated JWT-based authentication for secure
+sessions.}
+        \resumeItem{Automated deployment using CI/CD pipelines (GitHub Actions), containerized services with Docker, and deployed to
+AWS EC2 with images stored in ECR.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------------Experience/Certifications-----------
+
+
+\section*{Experience/Certifications}
+
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Red Hat Certified System Administrator (RHCSA)}{}
+        {Certification ID: 240-214-080}  {Issued Date: October 28, 2024}
+    \resumeSubheading
+    {Volunteering:}{}{}{}
+    \vspace{-0.5cm}
+    \resumeItemListStart
+        \resumeItem{Coordinated a team of 7 members in Encarta university tech fest, managing coding and non-tech competitions.}
+        \resumeItem{ Served as department coordinator during the university sports fest, leading cricket and kabaddi teams as captain.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------------Achievements--------------
+
+\section*{Achievements}
+\resumeSubHeadingListStart
+\resumeSubheading {}{}{}{}
+\vspace{-0.9cm}
+\resumeItemListStart
+    \resumeItem{Winner of Run of Code, The Royal Code, and Coding Chowk competitions in ENCARTA university tech fest.}
+    \resumeItem{Solved 900+ challenging DSA coding problems on LeetCode, GFG, and Codeforces.}
+    \resumeItem{ESRC workshop: Built a simple and fast line follower robot by using programming language Arduino, Raspberry-pi-
+    Pico, motors, and various electronics devices.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
